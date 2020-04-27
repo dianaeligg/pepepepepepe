@@ -48,7 +48,7 @@ var Progress = {
         this.song.play();
         // this.bar.style.display = "none";
         var showBox = document.getElementById("show");
-        for (var i =0, l = this.index;i<l;i++) {
+        for (var i =0, l = this.index-1;i<l;i++) {
             showBox.appendChild(this.imgList[i]);
         }
     }
