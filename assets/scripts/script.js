@@ -11,10 +11,11 @@ var imagePaths = [
     "./assets/images/10.gif",
     "./assets/images/11.gif",
     "./assets/images/12.gif",
-    "./assets/images/13.gif"
+    "./assets/images/13.gif",
     // "./assets/music/pepepepepepe.mp3"
 ];
 
 Progress.init();
 Progress.loadImages(imagePaths);
+Progress.loadAudio("./assets/music/pepepepepepe.mp3");
 
