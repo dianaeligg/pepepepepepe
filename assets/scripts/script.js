@@ -1,10 +1,20 @@
-var imagePaths = [];
 
-for (i = 1; i < 19; i++){
+
+let imagePaths = [];
+let howMany = 0;
+if (navigator.connection.type === "wifi" || 
+    navigator.connection.type === "ethernet" ){
+    howMany = 19;
+}
+else{
+    howMany = 7;
+}
+
+for (i = 1; i < howMany; i++){
     imagePaths.push(`./assets/images/${i}.gif`);
 }
 
-var backgrounds = [
+let backgrounds = [
     'rgb(223, 156, 141)',
     'rgb(241, 231, 210)',
     'rgb(0, 0, 0)',
