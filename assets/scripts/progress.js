@@ -45,12 +45,14 @@ var Progress = {
     
     done : function() {
         console.log("I am done loading");
-        this.song.play();
+        // this.song.play();
         // this.bar.style.display = "none";
-        var showBox = document.getElementById("show");
-        for (var i =0, l = this.index-1;i<l;i++) {
-            showBox.appendChild(this.imgList[i]);
-        }
+        // var showBox = document.getElementById("show");
+        // for (var i =0, l = this.index-1;i<l;i++) {
+        //     showBox.appendChild(this.imgList[i]);
+        // }
+        // var btn = document.getElementById("bigButton");
+        // btn.style.display = "flex";
     }
 
 };
