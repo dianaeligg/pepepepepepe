@@ -1,5 +1,3 @@
-
-
 let imagePaths = [];
 let howMany = 0;
 if (navigator.connection.type === "wifi" || 
@@ -41,6 +39,11 @@ dance.addEventListener("click", () => {
     click();
 });
 
+function toggleMusic () {
+    if (playing) Progress.song.pause();
+    else Progress.song.play();
+}
+
 function click (){
     console.log("click")
     show.style["align-items"] = "center";
@@ -65,6 +68,7 @@ function click (){
         dance.style.display = "flex";
         bigButton.style.display = "none";
     }
+    toggleMusic();
     playing = !playing;
 }
 
