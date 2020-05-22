@@ -27,9 +27,9 @@ Progress.loadImages(imagePaths);
 
 let playing = false;
 let body = document.body;
-let show = document.getElementById("show");
-let dance = document.getElementById("dance");
-let bigButton = document.getElementById("bigButton");
+let show = document.querySelector(".show");
+let dance = document.querySelector(".dance");
+let bigButton = document.querySelector(".bigButton");
 
 bigButton.addEventListener("click", () => {
     click();
