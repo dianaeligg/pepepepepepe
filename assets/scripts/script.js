@@ -45,7 +45,6 @@ function toggleMusic () {
 }
 
 function click (){
-    console.log("click")
     show.style["align-items"] = "center";
     if (playing){
         dance.style.display = "none";
